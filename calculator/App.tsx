@@ -3,6 +3,7 @@ import { SafeAreaView, StyleSheet, Switch, Text } from "react-native";
 import { myColors } from "./src/styles/Colors";
 import { ThemeContext } from "./src/context/ThemeContext";
 // import { Styles } from "./src/styles/GlobalStyles";
+import MyKeyboard from './src/components/MyKeyboard';
 
 export default function App() {
   const [theme, setTheme] = useState("light");
@@ -21,6 +22,7 @@ export default function App() {
         //   ios_backgroundColor="black"
         
         />
+        <MyKeyboard/>
       </SafeAreaView>
     </ThemeContext.Provider>
   );
